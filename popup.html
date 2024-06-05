@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Details</title>
+    <style>
+        body, html {
+            width: 500px; /* Ширина окна */
+            height: 500px; /* Высота окна */
+            overflow: auto; /* Позволяет скроллинг, если контент превышает размер окна */
+            font-family: Arial, sans-serif;
+            font-size: 13px; /* Увеличенный размер шрифта */
+            margin: 10px;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        pre {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            white-space: pre-wrap; /* Обеспечивает сохранение пробелов и переносов строк */
+        }
+    </style>
+</head>
+<body>
+<div id="status"></div>
+<div id="method"></div>
+<div id="url"></div>
+<pre id="payload"></pre>
+<pre id="response"></pre>
+<script src="popup.js"></script>
+</body>
+</html>
