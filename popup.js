@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const answers = payload.scenarioDto.applicantAnswers;
             const answersFormatted = JSON.stringify(answers, null, 2);
 
+            // Обработка и форматирование orderId
+            const orderId = payload.scenarioDto.orderId;
+            const orderIdFormatted = JSON.stringify(orderId, null, 2);
+
             // Вывод отформатированных данных
+
+            document.getElementById('orderId').textContent = `orderId: ${orderIdFormatted}`;
             document.getElementById('payload').textContent = `finishedAndCurrentScreens: ${screensFormatted}`;
             document.getElementById('response').textContent = `applicantAnswers: ${answersFormatted}`;
         }
